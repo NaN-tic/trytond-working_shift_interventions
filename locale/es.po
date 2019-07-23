@@ -1,0 +1,299 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:working_shift,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:working_shift,comment:"
+msgid "Comment"
+msgstr "Observaciones"
+
+msgctxt "field:working_shift,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:working_shift,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:working_shift,employee:"
+msgid "Employee"
+msgstr "Empleado"
+
+msgctxt "field:working_shift,hours:"
+msgid "Hours"
+msgstr "Horas"
+
+msgctxt "field:working_shift,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:working_shift,interventions:"
+msgid "Interventions"
+msgstr "Intervenciones"
+
+msgctxt "field:working_shift,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:working_shift,start_date:"
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+msgctxt "field:working_shift,state:"
+msgid "State"
+msgstr "Estado"
+
+msgctxt "field:working_shift,write_date:"
+msgid "Write Date"
+msgstr "Fecha de modificación"
+
+msgctxt "field:working_shift,write_uid:"
+msgid "Write User"
+msgstr "Usuario de modificación"
+
+msgctxt "field:working_shift.configuration,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:working_shift.configuration,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:working_shift.configuration,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:working_shift.configuration,intervention_sequence:"
+msgid "Intervention Sequence"
+msgstr "Secuencia intervenciones"
+
+msgctxt "field:working_shift.configuration,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:working_shift.configuration,working_shift_sequence:"
+msgid "Working Shift Sequence"
+msgstr "Secuencia turnos de trabajo"
+
+msgctxt "field:working_shift.configuration,write_date:"
+msgid "Write Date"
+msgstr "Fecha de modificación"
+
+msgctxt "field:working_shift.configuration,write_uid:"
+msgid "Write User"
+msgstr "Usuario de modificación"
+
+msgctxt "field:working_shift.configuration.sequence,intervention_sequence:"
+msgid "Intervention Sequence"
+msgstr "Secuencia intervenciones"
+
+msgctxt "field:working_shift.intervention,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:working_shift.intervention,comments:"
+msgid "Comments"
+msgstr "Observaciones"
+
+msgctxt "field:working_shift.intervention,contact_name:"
+msgid "Contact Name"
+msgstr "Nombre del contacto"
+
+msgctxt "field:working_shift.intervention,create_date:"
+msgid "Created at"
+msgstr "Fecha de creación"
+
+msgctxt "field:working_shift.intervention,create_uid:"
+msgid "Created by"
+msgstr "Usuario de creación"
+
+msgctxt "field:working_shift.intervention,end:"
+msgid "End"
+msgstr "Finalizado"
+
+msgctxt "field:working_shift.intervention,hours:"
+msgid "Hours"
+msgstr "Horas"
+
+msgctxt "field:working_shift.intervention,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:working_shift.intervention,party:"
+msgid "Party"
+msgstr "Tercero"
+
+msgctxt "field:working_shift.intervention,rec_name:"
+msgid "Record Name"
+msgstr "Nombre del registro"
+
+msgctxt "field:working_shift.intervention,reference:"
+msgid "Reference"
+msgstr "Referencia"
+
+msgctxt "field:working_shift.intervention,shift:"
+msgid "Working Shift"
+msgstr "Turno de trabajo"
+
+msgctxt "field:working_shift.intervention,shift_state:"
+msgid "Shift State"
+msgstr "Estado turno"
+
+msgctxt "field:working_shift.intervention,start:"
+msgid "Start"
+msgstr "Inicio"
+
+msgctxt "field:working_shift.intervention,start_date:"
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+msgctxt "field:working_shift.intervention,write_date:"
+msgid "Edited at"
+msgstr "Fecha de modificación"
+
+msgctxt "field:working_shift.intervention,write_uid:"
+msgid "Edited by"
+msgstr "Usuario de modificación"
+
+msgctxt "model:ir.action,name:"
+msgid "Categories"
+msgstr "Tipos"
+
+msgctxt "model:ir.action,name:act_intervention"
+msgid "Interventions"
+msgstr "Intervenciones"
+
+msgctxt "model:ir.action.act_window.domain,name:"
+msgid "All"
+msgstr "Todos"
+
+msgctxt "model:ir.message,text:date_outside_working_shift"
+msgid ""
+"Intervention's \"%(intervention)s\" period is outside working shift "
+"\"%(shift)s\" period."
+msgstr ""
+"El período de la intervención \"%(intervention)s\" esta fuera del período de"
+" su turno de trabajo \"%(shift)s\"."
+
+msgctxt "model:ir.message,text:delete_non_draft_intervention"
+msgid ""
+"Intervention \"%(intervention)s\" can not be deleted because its working "
+"shift is not in draft state."
+msgstr ""
+"La intervención \"%(intervention)s\" no se puede eliminar porqué su turno de"
+" trabajo no está en estado borrador."
+
+msgctxt "model:ir.message,text:missing_intervention_sequence"
+msgid ""
+"There is no intervention sequence defined. Please define one in working "
+"shift configuration.."
+msgstr ""
+"No se ha definido ninguna secuencia de intervenciones. Por favor, defina una"
+" en la configuración de turnos de trabajo."
+
+msgctxt "model:ir.sequence,name:"
+msgid "Working Shift"
+msgstr "Turno de trabajo"
+
+msgctxt "model:ir.sequence,name:sequence_intervention"
+msgid "Working Shift Intervention"
+msgstr "Intervención turno de trabajo"
+
+msgctxt "model:ir.sequence.type,name:"
+msgid "Working Shift"
+msgstr "Turno de trabajo"
+
+msgctxt "model:ir.sequence.type,name:sequence_type_intervention"
+msgid "Working Shift Intervention"
+msgstr "Intervención turno de trabajo"
+
+msgctxt "model:ir.ui.menu,name:"
+msgid "Categories"
+msgstr "Tipos"
+
+msgctxt "model:ir.ui.menu,name:menu_intervention"
+msgid "Interventions"
+msgstr "Intervenciones"
+
+msgctxt "model:res.group,name:"
+msgid "Working Shifts"
+msgstr "Turnos de trabajo"
+
+msgctxt "model:working_shift,name:"
+msgid "Working Shift"
+msgstr "Turno de trabajo"
+
+msgctxt "model:working_shift.configuration,name:"
+msgid "Working Shift Configuration"
+msgstr "Configuración turno de trabajo"
+
+msgctxt "model:working_shift.intervention,name:"
+msgid "Intervention"
+msgstr "Intervención"
+
+msgctxt "selection:working_shift,state:"
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgctxt "selection:working_shift,state:"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "selection:working_shift,state:"
+msgid "Done"
+msgstr "Realizado"
+
+msgctxt "selection:working_shift,state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Done"
+msgstr "Realizado"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "view:working_shift.configuration:"
+msgid "Working Shift Configuration"
+msgstr "Configuración turno de trabajo"
+
+msgctxt "view:working_shift.intervention:"
+msgid "Time"
+msgstr "Tiempo"
+
+msgctxt "view:working_shift:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "view:working_shift:"
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgctxt "view:working_shift:"
+msgid "Done"
+msgstr "Realizar"
+
+msgctxt "view:working_shift:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "view:working_shift:"
+msgid "Working Shift"
+msgstr "Turno de trabajo"
+
+msgctxt "view:working_shift:"
+msgid "Working Shifts"
+msgstr "Turnos de trabajo"

@@ -1,0 +1,299 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:working_shift,code:"
+msgid "Code"
+msgstr "Codi"
+
+msgctxt "field:working_shift,comment:"
+msgid "Comment"
+msgstr "Observacions"
+
+msgctxt "field:working_shift,create_date:"
+msgid "Create Date"
+msgstr "Data de creació"
+
+msgctxt "field:working_shift,create_uid:"
+msgid "Create User"
+msgstr "Usuari de creació"
+
+msgctxt "field:working_shift,employee:"
+msgid "Employee"
+msgstr "Empleat"
+
+msgctxt "field:working_shift,hours:"
+msgid "Hours"
+msgstr "Hores"
+
+msgctxt "field:working_shift,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:working_shift,interventions:"
+msgid "Interventions"
+msgstr "Intervencions"
+
+msgctxt "field:working_shift,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:working_shift,start_date:"
+msgid "Start Date"
+msgstr "Data inicial"
+
+msgctxt "field:working_shift,state:"
+msgid "State"
+msgstr "Estat"
+
+msgctxt "field:working_shift,write_date:"
+msgid "Write Date"
+msgstr "Data de modificació"
+
+msgctxt "field:working_shift,write_uid:"
+msgid "Write User"
+msgstr "Usuari de modificació"
+
+msgctxt "field:working_shift.configuration,create_date:"
+msgid "Create Date"
+msgstr "Data de creació"
+
+msgctxt "field:working_shift.configuration,create_uid:"
+msgid "Create User"
+msgstr "Usuari de creació"
+
+msgctxt "field:working_shift.configuration,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:working_shift.configuration,intervention_sequence:"
+msgid "Intervention Sequence"
+msgstr "Seqüència intervencions"
+
+msgctxt "field:working_shift.configuration,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:working_shift.configuration,working_shift_sequence:"
+msgid "Working Shift Sequence"
+msgstr "Seqüència torns de treball"
+
+msgctxt "field:working_shift.configuration,write_date:"
+msgid "Write Date"
+msgstr "Data de modificació"
+
+msgctxt "field:working_shift.configuration,write_uid:"
+msgid "Write User"
+msgstr "Usuari de modificació"
+
+msgctxt "field:working_shift.configuration.sequence,intervention_sequence:"
+msgid "Intervention Sequence"
+msgstr "Seqüència intervencions"
+
+msgctxt "field:working_shift.intervention,code:"
+msgid "Code"
+msgstr "Codi"
+
+msgctxt "field:working_shift.intervention,comments:"
+msgid "Comments"
+msgstr "Observacions"
+
+msgctxt "field:working_shift.intervention,contact_name:"
+msgid "Contact Name"
+msgstr "Nom del contacte"
+
+msgctxt "field:working_shift.intervention,create_date:"
+msgid "Created at"
+msgstr "Data de creació"
+
+msgctxt "field:working_shift.intervention,create_uid:"
+msgid "Created by"
+msgstr "Usuari de creació"
+
+msgctxt "field:working_shift.intervention,end:"
+msgid "End"
+msgstr "Finalitzat"
+
+msgctxt "field:working_shift.intervention,hours:"
+msgid "Hours"
+msgstr "Hores"
+
+msgctxt "field:working_shift.intervention,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:working_shift.intervention,party:"
+msgid "Party"
+msgstr "Tercer"
+
+msgctxt "field:working_shift.intervention,rec_name:"
+msgid "Record Name"
+msgstr "Nom"
+
+msgctxt "field:working_shift.intervention,reference:"
+msgid "Reference"
+msgstr "Referència"
+
+msgctxt "field:working_shift.intervention,shift:"
+msgid "Working Shift"
+msgstr "Torn de treball"
+
+msgctxt "field:working_shift.intervention,shift_state:"
+msgid "Shift State"
+msgstr "Estat torn de treball"
+
+msgctxt "field:working_shift.intervention,start:"
+msgid "Start"
+msgstr "Inici"
+
+msgctxt "field:working_shift.intervention,start_date:"
+msgid "Start Date"
+msgstr "Data inicial"
+
+msgctxt "field:working_shift.intervention,write_date:"
+msgid "Edited at"
+msgstr "Data de modificació"
+
+msgctxt "field:working_shift.intervention,write_uid:"
+msgid "Edited by"
+msgstr "Usuari de modificació"
+
+msgctxt "model:ir.action,name:"
+msgid "Categories"
+msgstr "Tipus"
+
+msgctxt "model:ir.action,name:act_intervention"
+msgid "Interventions"
+msgstr "Intervencions"
+
+msgctxt "model:ir.action.act_window.domain,name:"
+msgid "All"
+msgstr "Tots"
+
+msgctxt "model:ir.message,text:date_outside_working_shift"
+msgid ""
+"Intervention's \"%(intervention)s\" period is outside working shift "
+"\"%(shift)s\" period."
+msgstr ""
+"El període de la intervenció \"%(intervention)s\" està fora del període del "
+"seu torn de treball \"%(shift)s\"."
+
+msgctxt "model:ir.message,text:delete_non_draft_intervention"
+msgid ""
+"Intervention \"%(intervention)s\" can not be deleted because its working "
+"shift is not in draft state."
+msgstr ""
+"No es pot eliminar la intervenció \"%(intervention)s\" perquè el seu torn de"
+" treball no esta en estat esborrany."
+
+msgctxt "model:ir.message,text:missing_intervention_sequence"
+msgid ""
+"There is no intervention sequence defined. Please define one in working "
+"shift configuration.."
+msgstr ""
+"No s'ha definit cap seqüència d'intervencions. Si us plau, defineixi una en "
+"la configuració de torns de treball."
+
+msgctxt "model:ir.sequence,name:"
+msgid "Working Shift"
+msgstr "Torn de treball"
+
+msgctxt "model:ir.sequence,name:sequence_intervention"
+msgid "Working Shift Intervention"
+msgstr "Intervenció torn de treball"
+
+msgctxt "model:ir.sequence.type,name:"
+msgid "Working Shift"
+msgstr "Torn de treball"
+
+msgctxt "model:ir.sequence.type,name:sequence_type_intervention"
+msgid "Working Shift Intervention"
+msgstr "Intervenció torn de treball"
+
+msgctxt "model:ir.ui.menu,name:"
+msgid "Categories"
+msgstr "Tipus"
+
+msgctxt "model:ir.ui.menu,name:menu_intervention"
+msgid "Interventions"
+msgstr "Intervencions"
+
+msgctxt "model:res.group,name:"
+msgid "Working Shifts"
+msgstr "Torns de treball"
+
+msgctxt "model:working_shift,name:"
+msgid "Working Shift"
+msgstr "Torn de treball"
+
+msgctxt "model:working_shift.configuration,name:"
+msgid "Working Shift Configuration"
+msgstr "Configuració torn de treball"
+
+msgctxt "model:working_shift.intervention,name:"
+msgid "Intervention"
+msgstr "Intervenció"
+
+msgctxt "selection:working_shift,state:"
+msgid "Cancelled"
+msgstr "Cancel·lat"
+
+msgctxt "selection:working_shift,state:"
+msgid "Confirmed"
+msgstr "Confirmat"
+
+msgctxt "selection:working_shift,state:"
+msgid "Done"
+msgstr "Realitzat"
+
+msgctxt "selection:working_shift,state:"
+msgid "Draft"
+msgstr "Esborrany"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Cancelled"
+msgstr "Cancel·lat"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Confirmed"
+msgstr "Confirmat"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Done"
+msgstr "Realitzat"
+
+msgctxt "selection:working_shift.intervention,shift_state:"
+msgid "Draft"
+msgstr "Esborrany"
+
+msgctxt "view:working_shift.configuration:"
+msgid "Working Shift Configuration"
+msgstr "Configuració torns de treball"
+
+msgctxt "view:working_shift.intervention:"
+msgid "Time"
+msgstr "Temps"
+
+msgctxt "view:working_shift:"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "view:working_shift:"
+msgid "Confirm"
+msgstr "Confirma"
+
+msgctxt "view:working_shift:"
+msgid "Done"
+msgstr "Realitza"
+
+msgctxt "view:working_shift:"
+msgid "Draft"
+msgstr "Esborrany"
+
+msgctxt "view:working_shift:"
+msgid "Working Shift"
+msgstr "Torn de treball"
+
+msgctxt "view:working_shift:"
+msgid "Working Shifts"
+msgstr "Torns de treball"
