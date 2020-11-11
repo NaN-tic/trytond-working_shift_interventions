@@ -7,14 +7,15 @@ from trytond.pyson import Eval
 from trytond.i18n import gettext
 from trytond.model.exceptions import AccessError
 from trytond.exceptions import UserError
-from trytond.modules.working_shift.working_shift import start_date_searcher
+from trytond.modules.working_shift.working_shift import (start_date_searcher,
+    STATES as WS_STATES, DEPENDS as WS_DEPENDS)
 
 __all__ = ['Intervention', 'WorkingShift']
 
 STATES = {
-    'readonly': Eval('shift_state') != 'draft',
+    'readonly': Eval('shift_state') != 'done',
     }
-DEPENDS = ['shift_state']
+DEPENDS = ['shift_state', 'bbb']
 
 
 class Intervention(ModelSQL, ModelView):
@@ -142,13 +143,8 @@ class Intervention(ModelSQL, ModelView):
                     intervention=intervention.rec_name))
         super(Intervention, cls).delete(interventions)
 
-STATES = {
-    'readonly': Eval('state') != 'draft',
-    }
-DEPENDS = ['state']
-
 
 class WorkingShift(metaclass=PoolMeta):
     __name__ = 'working_shift'
     interventions = fields.One2Many('working_shift.intervention', 'shift',
-        'Interventions', states=STATES, depends=DEPENDS)
+        'Interventions', states=WS_STATES, depends=WS_DEPENDS)
