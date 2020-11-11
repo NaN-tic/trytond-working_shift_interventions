@@ -13,9 +13,9 @@ from trytond.modules.working_shift.working_shift import (start_date_searcher,
 __all__ = ['Intervention', 'WorkingShift']
 
 STATES = {
-    'readonly': Eval('shift_state') != 'done',
+    'readonly': Eval('shift_state') != 'draft',
     }
-DEPENDS = ['shift_state', 'bbb']
+DEPENDS = ['shift_state']
 
 
 class Intervention(ModelSQL, ModelView):
