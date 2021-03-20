@@ -1,7 +1,7 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.model import fields
-from trytond.pyson import Eval
+from trytond.pyson import Eval, Id
 from trytond.pool import Pool, PoolMeta
 
 __all_ = ['Configuration', 'ConfigurationSequence']
@@ -11,7 +11,8 @@ intervention_sequence = fields.Many2One(
         domain=[
             ('company', 'in',
                 [Eval('context', {}).get('company', -1), None]),
-            ('code', '=', 'working_shift.intervention'),
+            ('sequence_type', '=', Id('working_shift_interventions',
+                'sequence_type_intervention')),
             ])
 
 def default_func(field_name):

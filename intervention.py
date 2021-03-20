@@ -131,7 +131,7 @@ class Intervention(ModelSQL, ModelView):
         for value in vlist:
             if value.get('code'):
                 continue
-            value['code'] = Sequence.get_id(config.intervention_sequence.id)
+            value['code'] = config.intervention_sequence.get()
         return super(Intervention, cls).create(vlist)
 
     @classmethod
