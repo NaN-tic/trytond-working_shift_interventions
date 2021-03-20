@@ -121,7 +121,6 @@ class Intervention(ModelSQL, ModelView):
     @classmethod
     def create(cls, vlist):
         pool = Pool()
-        Sequence = pool.get('ir.sequence')
         Config = pool.get('working_shift.configuration')
 
         config = Config(1)
