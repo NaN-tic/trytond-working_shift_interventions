@@ -123,6 +123,7 @@ class Intervention(ModelSQL, ModelView):
         pool = Pool()
         Config = pool.get('working_shift.configuration')
 
+        vlist = [x.copy() for x in vlist]
         config = Config(1)
         if not config.intervention_sequence:
             raise UserError(gettext(
