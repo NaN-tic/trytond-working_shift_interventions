@@ -8,14 +8,13 @@ from trytond.i18n import gettext
 from trytond.model.exceptions import AccessError
 from trytond.exceptions import UserError
 from trytond.modules.working_shift.working_shift import (start_date_searcher,
-    STATES as WS_STATES, DEPENDS as WS_DEPENDS)
+    STATES as WS_STATES)
 
 __all__ = ['Intervention', 'WorkingShift']
 
 STATES = {
     'readonly': Eval('shift_state') != 'draft',
     }
-DEPENDS = ['shift_state']
 
 
 class Intervention(ModelSQL, ModelView):
@@ -23,16 +22,13 @@ class Intervention(ModelSQL, ModelView):
     __name__ = 'working_shift.intervention'
     code = fields.Char('Code', required=True, readonly=True)
     shift = fields.Many2One('working_shift', 'Working Shift',
-        required=True, ondelete='CASCADE', states=STATES,
-        depends=DEPENDS)
+        required=True, ondelete='CASCADE', states=STATES)
     shift_state = fields.Function(fields.Selection([], 'Shift State'),
         'on_change_with_shift_state')
-    reference = fields.Char('Reference', states=STATES, depends=DEPENDS)
-    contact_name = fields.Char('Contact Name', states=STATES, depends=DEPENDS)
-    party = fields.Many2One('party.party', 'Party', states=STATES,
-        depends=DEPENDS)
-    start = fields.DateTime('Start', required=True, states=STATES,
-        depends=DEPENDS)
+    reference = fields.Char('Reference', states=STATES)
+    contact_name = fields.Char('Contact Name', states=STATES)
+    party = fields.Many2One('party.party', 'Party', states=STATES)
+    start = fields.DateTime('Start', required=True, states=STATES)
     start_date = fields.Function(fields.Date('Start Date'),
         'get_start_date', searcher='search_start_date')
     end = fields.DateTime('End', domain=[
@@ -41,10 +37,10 @@ class Intervention(ModelSQL, ModelView):
                 ('end', '>', Eval('start')),
                 ],
             ],
-        states=STATES, depends=DEPENDS+['start'])
+        states=STATES)
     hours = fields.Function(fields.Numeric('Hours', digits=(16, 2)),
         'on_change_with_hours')
-    comments = fields.Text('Comments', states=STATES, depends=DEPENDS)
+    comments = fields.Text('Comments', states=STATES)
 
     @classmethod
     def __setup__(cls):
@@ -147,4 +143,4 @@ class Intervention(ModelSQL, ModelView):
 class WorkingShift(metaclass=PoolMeta):
     __name__ = 'working_shift'
     interventions = fields.One2Many('working_shift.intervention', 'shift',
-        'Interventions', states=WS_STATES, depends=WS_DEPENDS)
+        'Interventions', states=WS_STATES)
