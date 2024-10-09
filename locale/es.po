@@ -158,10 +158,6 @@ msgctxt "field:working_shift.intervention,write_uid:"
 msgid "Edited by"
 msgstr "Usuario de modificación"
 
-msgctxt "model:ir.action,name:"
-msgid "Categories"
-msgstr "Tipos"
-
 msgctxt "model:ir.action,name:act_intervention"
 msgid "Interventions"
 msgstr "Intervenciones"
