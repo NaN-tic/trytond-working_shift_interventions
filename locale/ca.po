@@ -206,17 +206,9 @@ msgctxt "model:ir.sequence.type,name:sequence_type_intervention"
 msgid "Working Shift Intervention"
 msgstr "Intervenció torn de treball"
 
-msgctxt "model:ir.ui.menu,name:"
-msgid "Categories"
-msgstr "Tipus"
-
 msgctxt "model:ir.ui.menu,name:menu_intervention"
 msgid "Interventions"
 msgstr "Intervencions"
-
-msgctxt "model:res.group,name:"
-msgid "Working Shifts"
-msgstr "Torns de treball"
 
 msgctxt "model:working_shift,name:"
 msgid "Working Shift"
