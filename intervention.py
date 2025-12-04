@@ -7,10 +7,9 @@ from trytond.pyson import Eval
 from trytond.i18n import gettext
 from trytond.model.exceptions import AccessError
 from trytond.exceptions import UserError
+from trytond.model.exceptions import ValidationError
 from trytond.modules.working_shift.working_shift import (start_date_searcher,
     STATES as WS_STATES)
-
-__all__ = ['Intervention', 'WorkingShift']
 
 STATES = {
     'readonly': Eval('shift_state') != 'draft',
@@ -109,7 +108,7 @@ class Intervention(ModelSQL, ModelView):
                 error = True
 
         if error:
-            raise UserError(gettext(
+            raise ValidationError(gettext(
                     'working_shift_interventions.date_outside_working_shift',
                     intervention=self.rec_name,
                     shift=self.shift.rec_name))
