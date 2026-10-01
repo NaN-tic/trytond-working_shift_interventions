@@ -114,20 +114,19 @@ class Intervention(ModelSQL, ModelView):
                     shift=self.shift.rec_name))
 
     @classmethod
-    def create(cls, vlist):
+    def preprocess_values(cls, mode, values):
+        values = super().preprocess_values(mode, values)
+        if mode != 'create' or values.get('code'):
+            return values
+
         pool = Pool()
         Config = pool.get('working_shift.configuration')
-
-        vlist = [x.copy() for x in vlist]
         config = Config(1)
         if not config.intervention_sequence:
             raise UserError(gettext(
                 'working_shift_interventions.missing_intervention_sequence'))
-        for value in vlist:
-            if value.get('code'):
-                continue
-            value['code'] = config.intervention_sequence.get()
-        return super(Intervention, cls).create(vlist)
+        values['code'] = config.intervention_sequence.get()
+        return values
 
     @classmethod
     def delete(cls, interventions):
